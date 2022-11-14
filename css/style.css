@@ -734,7 +734,12 @@ body {
 @media (max-width: 961px) {
   .header__burger {
     display: flex;
-    z-index: 1;
+    z-index: 21;
+  }
+  .header__burger.active {
+    right: 36px; 
+    top: 60px;
+    position: fixed;
   }
   .main2__up-wrapper {
     /* display: none; */
@@ -744,9 +749,10 @@ body {
     right: 0;
     top: 0;
     width: 80%;
+    /* height: 100vh; */
     bottom: 0;
     background-color: #1d1d1d;
-    z-index: 1;
+    z-index: 21;
     transform: translateX(100%);
     transition: transform .3s ease-in;
   }
