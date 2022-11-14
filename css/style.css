@@ -777,6 +777,17 @@ body {
   .btn {
     padding: 18px 48px;
   }
+  .about2 {
+    padding: 100px 15px;
+  }
+  .about2__logo img {
+    max-width: 100%;
+
+  }
+  .form__content .btn {
+    font-size: 14px;
+padding: 10px 40px;
+  }
   .about2__logo {
     margin: auto;
   }
@@ -790,6 +801,15 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     gap: 50px;
+  }
+  .about2__text p{
+    font-size: 14px;
+  }
+  .form__head h2{
+    font-size: 20px;
+  }
+  .map2__form {
+    width: 95%;
   }
 }
 @media (max-width: 500px) {
