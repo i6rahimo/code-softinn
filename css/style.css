@@ -793,6 +793,7 @@ body {
   .form__content .btn {
     font-size: 14px;
 padding: 10px 40px;
+width: 100%;
   }
   .about2__logo {
     margin: auto;
@@ -816,6 +817,11 @@ padding: 10px 40px;
   }
   .map2__form {
     width: 95%;
+    padding: 40px;
+  }
+  .footer2 {
+    justify-content: center;
+    text-align: center;
   }
 }
 @media (max-width: 500px) {
@@ -828,5 +834,12 @@ padding: 10px 40px;
 @media (max-width: 580px) {
   .reviews2__item {
     max-width: 300px;
+  }
+  .reviews2__item-bot {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .reviews2__item-all {
+    margin-left: auto;
   }
 }
