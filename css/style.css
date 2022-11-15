@@ -593,6 +593,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 10px;
+  position: relative;
 }
 .form__content input {
   padding: 18px 15px;
@@ -792,8 +793,9 @@ body {
   }
   .form__content .btn {
     font-size: 14px;
-padding: 10px 40px;
-width: 100%;
+    padding: 10px 40px;
+    width: 281px;
+    /* max-width: 280px; */
   }
   .about2__logo {
     margin: auto;
