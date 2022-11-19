@@ -90,3 +90,20 @@ const swiper = new Swiper('.swiper', {
     }
   }
 });
+
+const swiperPopup = new Swiper('.popup-swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 1,
+  slideClass: 'popup-slide',
+  wrapperClass: 'popup-wrapper',
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.popup-button-next',
+    prevEl: '.popup-button-prev',
+  },
+
+ 
+});

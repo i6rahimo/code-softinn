@@ -964,3 +964,82 @@ body {
   background-color: #ecc02a;
   border: 1px solid #ecc02a;
 }
+
+/* popup */
+
+.rooms-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: rgba(0,0,0,.6);
+  align-items: center;
+}
+.popup-swiper {
+  overflow: hidden;
+  width: 1100px;
+  /* max-width: 100%; */
+  height:auto;
+  /* min-height: 400px; */
+}
+.popup-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.popup-slide {
+  flex-shrink: 0;
+}
+.popup-slide img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+
+.popup-button-prev,
+.popup-button-next  {
+  width: 30px;
+  height: 50px;
+  cursor: pointer;
+  margin: 0 40px 0 40px;
+}
+.popup-button-prev::after {
+  content: url('../img/icons/index.png');
+  display: block;
+  transform: rotate(180deg);
+}
+.popup-button-next::before {
+  content: url('../img/icons/index.png');
+  display: block;
+}
+.close {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 40px;
+}
+
+@media (max-width: 800px) {
+  .popup-button-prev, .popup-button-next {
+    margin: 0 10px 0 10px;
+    width: 10px;
+    height: 20px;
+  }
+  .popup-button-prev::after {
+    content: url('../img/icons/index.png');
+    display: block;
+    transform: rotate(180deg);
+    width: 10px;
+    height: 20px;
+  }
+  .popup-button-next::before {
+    content: url('../img/icons/index.png');
+    display: block;
+  }
+}
