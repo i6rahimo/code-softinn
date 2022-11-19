@@ -845,3 +845,122 @@ body {
     margin-left: auto;
   }
 }
+.swiper {
+  width: 1070px;
+  max-width: 100%;
+  height: 887px;
+  padding: 0 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.room__btns {
+  /* display: flex; */
+  position: relative;
+  bottom: 100px;
+}
+.room__more {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 0 45px 0;
+  z-index: 1;
+}
+.rooms {
+  background-image: url('../img/room__bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* height: 787px; */
+  max-width: 100%;
+}
+.room__title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+  border-top: 2px solid #ecc02a;
+  padding-top: 2rem;
+  margin-bottom: 3rem;
+  width: 120px;
+  margin: 50px 0 3rem;
+}
+.swiper-button-next {
+  left: 270px;
+}
+.fa-angle-right::before {
+  font-size: 50px;
+  color: #fff;
+  left: 250px;
+
+}
+@media (max-width: 680px) {
+  .room__btns {
+    margin: auto;
+  }
+}
+.swiper-button-next::after {
+  content: '';
+  left: 250px;
+  background-color: #fff;
+} 
+.fa-angle-right::before {
+  font-size: 50px;
+  color: #fff;
+  left: 250px;
+
+}
+.swiper-button-next::after {
+  content: '';
+  background-color: #fff;
+  left: 250px;
+}
+
+
+.fa-angle-left::before {
+  font-size: 50px;
+  color: #fff;
+}
+.swiper-button-prev::after {
+  content: '';
+  background-color: #fff;
+  z-index: 22221;
+} 
+
+
+.room__img {
+  width: 100%;
+  object-fit: cover;
+  max-width: 300px;
+  height: 330px;
+}
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  max-width: 100%;
+  height: 530px;
+  z-index: -1;
+}
+.room__name {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: 1em 0 1em;
+  line-height: 150%;
+}
+.room__btn {
+  font-size: 1.4rem;
+  padding: 20px;
+  border: 1px solid #fff;
+  color: #fff;
+  -webkit-transition: background .3s;
+  transition: background .3s;
+}
+.room__btn:hover {
+  background-color: #ecc02a;
+  border: 1px solid #ecc02a;
+}

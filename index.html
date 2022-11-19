@@ -23,6 +23,10 @@
     <link rel="stylesheet" type="text/css" href="dist/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="dist/slick/slick-theme.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="css/style.css">
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -146,7 +150,61 @@
         </div>
 
       </div>
+      <div class="rooms">
+        <div class="swiper">
+          <h2 class="room__title">Номера</h2>
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img class="room__img" src="img/6.jpg" alt="Комната 1">
+              <p class="room__name">№1 Двухместный номер <br> Цена от 2000 рублей</p>
+              <a href="" class="room__btn">Забронировать</a>
+            </div>
 
+            <div class="swiper-slide">
+              <img class="room__img" src="img/2.jpg" alt="Комната 1">
+              <p class="room__name">№2 Апартаменты-студио <br> Цена от 2500 рублей</p>
+              <a href="" class="room__btn">Забронировать</a>
+            </div>
+
+            <div class="swiper-slide">
+              <img class="room__img" src="img/3.jpg" alt="Комната 1">
+              <p class="room__name">№3 Делюкс с 1 кроватью <br> Цена от 3200 рублей</p>
+              <a href="" class="room__btn">Забронировать</a>
+            </div>
+
+            <div class="swiper-slide">
+              <img class="room__img" src="img/4.jpg" alt="Комната 1">
+              <p class="room__name">№4 Номер с кроватью <br> размера «queen-size» <br> Цена от 3000 рублей</p>
+              <a href="" class="room__btn">Забронировать</a>
+            </div>
+
+            <div class="swiper-slide">
+              <img class="room__img" src="img/8.jpg" alt="Комната 1">
+              <p class="room__name">№5 Номер с 1 двуспальной  кроватью или 2 раздельными <br> Цена от 2700 рублей</p>
+              <a href="" class="room__btn">Забронировать</a>
+            </div>
+
+            <div class="swiper-slide">
+              <img class="room__img" src="img/5.jpg" alt="Комната 1">
+              <p class="room__name">№6 Студио стандарт <br> Цена от 2300 рублей</p>
+              <a href="" class="room__btn">Забронировать</a>
+            </div>
+          </div>
+          <div class="room__btns">
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev">
+              <i class="fa fa-angle-left rooms__arrows rooms__arrow__left slick-arrow"></i>
+            </div>
+            <a href="" class="room__more">смотреть все номера</a>
+            <div class="swiper-button-next">
+              <i class="fa fa-angle-right rooms__arrows rooms__arrow__right slick-arrow""></i>
+            </div>
+          </div>
+        </div>
+        
+      </div>
       <div class="reviews2">
         <div class="reviews2__head">
           <span></span>
@@ -338,6 +396,7 @@
     <script type="text/javascript" src="dist/slick/slick.min.js"></script>
     <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
     <!-- <script src="js/mail.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     
   </body>
