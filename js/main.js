@@ -101,8 +101,8 @@ const swiperPopup = new Swiper('.popup-swiper', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.popup-button-next',
-    prevEl: '.popup-button-prev',
+    nextEl: '.popup-button-prev',
+    prevEl: '.popup-button-next',
   },
 
  
@@ -112,31 +112,31 @@ const swiperPopup = new Swiper('.popup-swiper', {
 function gallery() {
   const roomItems = document.querySelectorAll('.swiper-slide');
   const roomSlide = document.querySelectorAll('.rooms-popup');
-  const closePopup = document.querySelectorAll('.close');
+  const closePopup = document.querySelectorAll('.close')
+
+  
   roomItems.forEach(item => {
     item.addEventListener('click', (e )=> {
-
-        let currentBtn = item;
-        console.log(currentBtn);
-        let tabId = currentBtn.getAttribute("data-tab");
-        let currentTab = document.querySelector(tabId);
-     
-        if( ! currentBtn.classList.contains('active') ) {
-            roomSlide.forEach(function(item) {
-                item.classList.remove('active');
-            });
-            
-            roomSlide.forEach(function(item) {
-                item.classList.remove('active');
-            });
-    
-            closePopup.forEach(e => {
-              e.addEventListener('click' ,()=> {
-                currentTab.classList.remove('active')
-              })
-            })
-            currentBtn.classList.add('active');
-            currentTab.classList.add('active');
+      
+      let currentBtn = item;
+      console.log(currentBtn);
+      let tabId = currentBtn.getAttribute("data-tab");
+      let currentTab = document.querySelector(tabId);
+      
+      if( ! currentBtn.classList.contains('active') ) {
+        roomSlide.forEach(function(item) {
+          item.classList.remove('active');
+        });
+        
+        closePopup.forEach(e => {
+          e.addEventListener('click', ()=> {
+            currentTab.classList.remove('active')            
+          })
+        })
+        roomSlide.forEach(function(item) {
+              item.classList.remove('active');
+        });
+        currentTab.classList.add('active');
         }
     })
   })

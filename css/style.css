@@ -856,6 +856,7 @@ body {
   position: relative;
 }
 .room__btns {
+  margin-right: auto;
   /* display: flex; */
   position: relative;
   bottom: 100px;
@@ -886,7 +887,7 @@ body {
   margin: 50px 0 3rem;
 }
 .swiper-button-next {
-  left: 270px;
+  /* left: 242px; */
 }
 .fa-angle-right::before {
   font-size: 50px;
@@ -1042,5 +1043,19 @@ body {
   .close img{
     width: 30px;
     height: 30px;
+  }
+}
+
+@media (max-width: 680px) {
+  .popup-button-prev .popup-button-next {
+    height: 1px;
+  }
+  .room__title {
+    margin: 2rem auto 3rem;
+  }
+  .close {
+    position: absolute;
+    top: 200px;
+    right: 50px;
   }
 }
